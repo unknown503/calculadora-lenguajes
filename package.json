@@ -1,15 +1,19 @@
 {
   "name": "calculadora-lenguajes",
+  "homepage": "https://unknown503.github.io/calculadora-lenguajes/",
   "version": "1.0",
   "description": "Calculadora de lenguajes",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^3.0.0",
     "vite-plugin-solid": "^2.3.0"
   },

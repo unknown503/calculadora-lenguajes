@@ -4,14 +4,15 @@ import solidPlugin from 'vite-plugin-solid';
 export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd(), '')
 	return {
-		define: {
-			PORT: env.VITE_PORT
-		},
 		plugins: [solidPlugin()],
 		server: {
 			port: env.PORT,
-			// port: 3000,
-			host: "0.0.0.0"
+			// host: "0.0.0.0",
+			proxy: {
+				'/': {
+					target: 'https://unknown503.github.io/calculadora-lenguajes/'
+				},
+			}
 		},
 		build: {
 			target: 'esnext',
