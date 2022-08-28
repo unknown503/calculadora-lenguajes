@@ -1,12 +1,12 @@
 {
   "name": "calculadora-lenguajes",
-  "homepage":"https://unknown503.github.io/calculadora-lenguajes-",
+  "homepage":"https://unknown503.github.io/calculadora-lenguajes",
   "version": "1.0",
   "description": "Calculadora de lenguajes",
   "scripts": {
     "start": "vite",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
