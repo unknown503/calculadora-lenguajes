@@ -11,7 +11,7 @@ export default defineConfig(({ command, mode }) => {
 		server: {
 			port: env.PORT,
 			// port: 3000,
-			base: "0.0.0.0"
+			host: "0.0.0.0"
 		},
 		build: {
 			target: 'esnext',
