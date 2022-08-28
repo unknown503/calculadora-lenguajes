@@ -8,11 +8,6 @@ export default defineConfig(({ command, mode }) => {
 		server: {
 			port: env.PORT,
 			// host: "0.0.0.0",
-			proxy: {
-				'/': {
-					target: 'https://unknown503.github.io/calculadora-lenguajes/'
-				},
-			}
 		},
 		build: {
 			target: 'esnext',
