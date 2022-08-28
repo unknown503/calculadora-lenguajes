@@ -7,7 +7,7 @@ export default defineConfig(({ command, mode }) => {
 		plugins: [solidPlugin()],
 		server: {
 			port: env.PORT,
-			// host: "0.0.0.0",
+			host: "0.0.0.0",
 		},
 		build: {
 			target: 'esnext',
