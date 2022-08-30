@@ -4,9 +4,9 @@ const Concatenación = (leng1, leng2) => {
     const leng1Array = leng1.split(",")
     const leng2Array = leng2.split(",")
     let array = []
-    for (const k2 in leng2Array) {
-        for (const k in leng1Array) {
-            array.push(leng2Array[k2] + leng1Array[k])
+    for (const k in leng1Array) {
+        for (const k2 in leng2Array) {
+            array.push(leng1Array[k] + leng2Array[k2])
         }
     }
     return array
